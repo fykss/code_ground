@@ -7,7 +7,7 @@ import java.util.Arrays;
  * Нахождения длины наибольшей возрастающей подпоследовательности
  */
 
-public class Solution {
+public class MyDecisionSimple {
     private static int Answer;
 
     private static int countSubsequence(int[] sequence) {
@@ -43,7 +43,6 @@ public class Solution {
         findSeq[Answer - count++] = sequence[tempIndMax];
 
         for (int i = tempIndMax; i > 0; i--) {
-
             if (arrCount[i] - arrCount[i - 1] == 1) {
                 findSeq[Answer - count++] = sequence[i - 1];
             }
@@ -64,3 +63,40 @@ public class Solution {
         System.out.println("Max length sequence: " + countSubsequence(sequence));
     }
 }
+
+
+//private static int solution(int[] arr) {
+//        if (arr.length == 0) {
+//            return 0;
+//        } else if (arr.length == 1) {
+//            return 1;
+//        }
+//
+//        int Answer = 0;
+//        int[] count = new int[arr.length];
+//        int max = count[0];
+//
+//        for (int i = 0; i < count.length; i++) {
+//            count[i] = 1;
+//        }
+//
+//        Answer = max;
+//
+//        for (int i = 1; i < arr.length; i++) {
+//            for (int j = 0; j < i; j++) {
+//                if (arr[i] > arr[j] && count[i] <= count[j]) {
+//                    count[i]++;
+//                }
+//            }
+//        }
+//
+//        for (int i = 0; i < count.length; i++) {
+//
+//            if (count[i] > max) {
+//                Answer = count[i];
+//                max = count[i];
+//            }
+//        }
+//
+//        return Answer;
+//    }
