@@ -1,26 +1,27 @@
 package LISL;
 
 public class LeetCodeDecision {
-    public static int lengthOfLIS(int[] nums) {
-        if (nums.length == 0) {
+
+    private static int lengthOfLIS(int[] arr) {
+        if (arr.length == 0) {
             return 0;
         }
 
-        int[] dp = new int[nums.length];
-        dp[0] = 1;
-        int maxans = 1;
+        int[] counts = new int[arr.length];
+        counts[0] = 1;
+        int answer = 1;
 
-        for (int i = 1; i < dp.length; i++) {
+        for (int i = 1; i < counts.length; i++) {
             int maxval = 0;
             for (int j = 0; j < i; j++) {
-                if (nums[i] > nums[j]) {
-                    maxval = Math.max(maxval, dp[j]);
+                if (arr[i] > arr[j]) {
+                    maxval = Math.max(maxval, counts[j]);
                 }
             }
-            dp[i] = maxval + 1;
-            maxans = Math.max(maxans, dp[i]);
+            counts[i] = maxval + 1;
+            answer = Math.max(answer, counts[i]);
         }
-        return maxans;
+        return answer;
     }
 
     public static void main(String[] args) {
