@@ -1,17 +1,23 @@
 package LISL;
 
+/**
+ * Longest Increasing Subsequence Length
+ * Нахождения длины наибольшей возрастающей подпоследовательности
+ */
+
 public class LeetCodeDecision {
 
     private static int lengthOfLIS(int[] arr) {
-        if (arr.length == 0) {
+        int N = arr.length;
+        if (N == 0) {
             return 0;
         }
 
-        int[] counts = new int[arr.length];
+        int[] counts = new int[N];
         counts[0] = 1;
         int answer = 1;
 
-        for (int i = 1; i < counts.length; i++) {
+        for (int i = 1; i < N; i++) {
             int maxval = 0;
             for (int j = 0; j < i; j++) {
                 if (arr[i] > arr[j]) {
