@@ -1,9 +1,9 @@
-package hello;
+package dynamic_programming.hello;
 
 import java.util.Scanner;
 
 public class Solution {
-    static int Answer;
+    private static int Answer;
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

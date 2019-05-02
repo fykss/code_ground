@@ -1,4 +1,4 @@
-package fibonacci;
+package dynamic_programming.fibonacci.fibonacci_problems;
 
 /**
  * You are climbing a stair case. It takes n steps to reach to the top.
@@ -9,7 +9,8 @@ package fibonacci;
  * 1. 1 step + 1 step + 1 step
  * 2. 1 step + 2 steps
  * 3. 2 steps + 1 step
- * Fibonacci
+ * FibonacciTabulation
+ * https://leetcode.com/problems/climbing-stairs/
  */
 
 public class ClimbingStairsFib {
@@ -29,6 +30,9 @@ public class ClimbingStairsFib {
     public static void main(String[] args) {
         int input = 2;
 
-        System.out.println(climbingStairs(input));
+        long before = System.currentTimeMillis();
+        System.out.println(String.format("Сlimbing Stairs: %d", climbingStairs(input)));
+        long after = System.currentTimeMillis();
+        System.out.println(String.format("Millis left: %d", after - before));
     }
 }
