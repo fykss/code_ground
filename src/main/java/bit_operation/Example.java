@@ -1,7 +1,5 @@
 package bit_operation;
 
-import java.util.Arrays;
-
 public class Example {
 
     private static int solution(int[] arr) {
