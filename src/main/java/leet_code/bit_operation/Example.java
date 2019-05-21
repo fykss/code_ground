@@ -1,4 +1,4 @@
-package bit_operation;
+package leet_code.bit_operation;
 
 public class Example {
 

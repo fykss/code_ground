@@ -1,4 +1,4 @@
-package dynamic_programming.hello;
+package code_ground.hello;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package dynamic_programming.fibonacci;
+package leet_code.fibonacci;
 
 /**
  * Memoization (Top Down):

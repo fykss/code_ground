@@ -1,4 +1,4 @@
-package dynamic_programming.maximum_subarray;
+package leet_code.maximum_subarray;
 
 /**
  * Maximum Subarray:

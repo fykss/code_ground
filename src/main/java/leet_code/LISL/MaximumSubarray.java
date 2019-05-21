@@ -1,4 +1,4 @@
-package LISL;
+package leet_code.LISL;
 
 public class MaximumSubarray {
     public static int maximumSubarray(int[] arr) {

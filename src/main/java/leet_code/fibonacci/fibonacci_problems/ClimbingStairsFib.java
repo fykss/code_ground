@@ -1,4 +1,4 @@
-package dynamic_programming.fibonacci.fibonacci_problems;
+package leet_code.fibonacci.fibonacci_problems;
 
 /**
  * You are climbing a stair case. It takes n steps to reach to the top.

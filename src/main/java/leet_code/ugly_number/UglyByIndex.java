@@ -1,4 +1,4 @@
-package dynamic_programming.ugly_number;
+package leet_code.ugly_number;
 
 public class UglyByIndex {
     private static int nthUglyNumber(int n) {
@@ -36,6 +36,7 @@ public class UglyByIndex {
     }
 
     public static void main(String[] args) {
-        System.out.println(nthUglyNumber(8));
+        int n = 8;
+        System.out.println(nthUglyNumber(n));
     }
 }

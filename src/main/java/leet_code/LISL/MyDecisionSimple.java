@@ -1,4 +1,4 @@
-package LISL;
+package leet_code.LISL;
 
 import java.util.Arrays;
 
